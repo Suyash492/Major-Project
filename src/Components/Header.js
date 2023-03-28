@@ -21,11 +21,10 @@ function Header() {
             <Link to ="/profile">Profile</Link>
           </li>
           <li>
-            {/* <a  className="hover:text-gray-300" >
-              Problems
-            </a> */}
-            <Link to =""></Link>
+            
+            <Link to ="/leaderboard">Leaderboard</Link>
           </li>
+          
         </ul>
       </nav>
     </header>

@@ -5,6 +5,8 @@ import RankingSection from "./Components/Rankingsection";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
 import ProfileSection from "./Components/ProfileSection";
+import Board from "./Components/board";
+import './Components/style.css'
 
 function App() {
   return (
@@ -13,9 +15,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route >
-          <Route  path="" Component={Header}/>
+          <Route  index Component={Header}/>
             <Route path="/problem" Component={Problem} />
             <Route path="/profile" Component={RankingSection} />
+            <Route path="leaderboard" Component={Board} />
+            
             </Route>
         </Routes>
       </BrowserRouter>
