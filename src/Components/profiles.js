@@ -14,7 +14,8 @@ function Item(data){
         <>
             {
                 data.map((value, index) => (
-                    <div className="flex" key={index}>
+                    <div className="flex " key={index}>
+                        <div className='items-center'>
                         <div className="item">
                             <img src={value.img} alt="" />
             
@@ -23,10 +24,13 @@ function Item(data){
                                 <span>{value.batch}</span>
                             </div>                
                         </div>
-                        <div className="item">
+                        </div>
+                        <div>
+                        <div className="item tex">
                             <span>{value.score}</span>
                         </div>
-                    </div>
+                        </div>
+                        </div>
                     )
                 )
             }

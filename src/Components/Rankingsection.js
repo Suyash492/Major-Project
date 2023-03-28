@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from './Header';
 
 function RankingSection() {
   const [score, setScore] = useState(0);
@@ -28,8 +29,9 @@ function RankingSection() {
   };
 
   return (
-    <section className="py-8">
-      <h2 className="text-2xl font-bold mb-4 ml-8">Profile</h2>
+    <section className="">
+      <Header></Header>
+      <h2 className="text-2xl font-bold mb-4 mt-10 text-center">Profile</h2>
       <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
         <img src="https://via.placeholder.com/150" alt="Profile Picture" className="rounded-full w-24 h-24 mb-2" />
         <h3 className="text-lg font-bold">Suyash Bagul</h3>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Header from './Header';
+
 
 function Problem() {
   const [solvedProblems, setSolvedProblems] = useState([]);
@@ -54,8 +56,11 @@ function Problem() {
   const filteredProblems = sortBy === 'All' ? problems : problems.filter(problem => problem.difficulty === sortBy);
 
   return (
-    <section className="py-8">
-      <h2 className="text-2xl font-bold mb-4">Coding Problems</h2>
+    
+    <section className=" ">
+      <Header></Header>
+
+      <h2 className="text-2xl font-bold mb-4 mt-10 text-center">Coding Problems</h2>
       <nav className="mb-4">
         <ul className="flex space-x-4">
           {difficulties.map(difficulty => (
