@@ -5,7 +5,8 @@ function Header() {
   
   return (
     <header className="bg-gray-900 text-white py-4 px-8 flex justify-between items-center">
-      <h1 className="text-2xl font-bold">Coding Platform</h1>
+      {/* <h1 className="text-2xl font-bold" >Coding Platform</h1> */}
+      <Link className="text-2xl font-bold" to= "/authdetails"> Coding Platform</Link>
       <nav>
         <ul className="flex space-x-4">
           <li>

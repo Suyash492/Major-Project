@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
 import ProfileSection from "./Components/ProfileSection";
 import Board from "./Components/board";
 import './Components/style.css'
+import SignIn from "./Components/auth/SignIn";
+import SignUp from "./Components/auth/SignUp";
+import AuthDetails from "./Components/auth/AuthDetails";
 
 function App() {
   return (
@@ -14,15 +17,17 @@ function App() {
     
       <BrowserRouter>
         <Routes>
-          <Route >
-          <Route  index Component={Header}/>
+             <Route index Component={SignIn} />
             <Route path="/problem" Component={Problem} />
             <Route path="/profile" Component={RankingSection} />
-            <Route path="leaderboard" Component={Board} />
+            <Route path="/leaderboard" Component={Board} />
+            <Route path="/authdetails" Component={AuthDetails} />
             
-            </Route>
+            
+            
         </Routes>
       </BrowserRouter>
+     
     </>
   );
 }
