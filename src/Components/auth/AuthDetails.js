@@ -36,7 +36,7 @@ const AuthDetails = () => {
       {authUser ? (
         <>
           <p className="text-lg font-semibold mb-4">
-            Signed in as {authUser.email}
+            Signed in  {authUser.name}
           </p>
           <button
             onClick={userSignOut}
